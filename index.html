@@ -5,36 +5,42 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Brett Covers Capital</title>
 <style>
-  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:42rem;margin:0 auto;padding:2.5rem 1.25rem;line-height:1.6;color:#1a1a1a}
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:44rem;margin:0 auto;padding:2.5rem 1.25rem;line-height:1.65;color:#1a1a1a}
   h1{font-size:1.6rem;margin-bottom:.25rem}
   .tag{color:#555;margin-top:0}
   h2{font-size:1.15rem;margin-top:2rem}
   a{color:#0a66c2}
+  code{background:#f2f2f2;padding:0 .3rem;border-radius:3px}
   .links{margin-top:2rem;padding-top:1rem;border-top:1px solid #ddd}
 </style>
 </head>
 <body>
 <h1>Brett Covers Capital</h1>
-<p class="tag">Daily startup-news Shorts — private publishing automation for one person.</p>
+<p class="tag">The official site for the Brett Covers Capital video automation application.</p>
 
-<h2>What this is</h2>
-<p>Brett Covers Capital is a single-user content pipeline. It reads public startup-news
-feeds, drafts a short video script, renders a Short, and uploads it — as a
-<b>private draft</b> — to the owner's own YouTube channel. Nothing is published
-without the owner's explicit approval. The only Google account it accesses is the
-owner's own, and the only scope is YouTube video upload.</p>
+<h2>What the app does</h2>
+<p><strong>Brett Covers Capital</strong> (operated by Brett Balquist) is a personal,
+single-user application that produces short-form startup-news videos ("Shorts") and
+uploads them — always as <strong>private or unlisted drafts</strong> — to the owner's own
+YouTube channel, <strong>@brett.covers.capital</strong>. The application reads public
+startup-news RSS feeds, drafts a video script, renders the video locally, and uses the
+Google YouTube API with the single scope <code>youtube.upload</code> to place the finished
+video in the owner's channel as a draft. Nothing is ever published publicly without the
+owner's explicit, manual approval.</p>
 
-<h2>What it does NOT do</h2>
-<ul>
-  <li>It does not access anyone else's Google, YouTube, or social accounts.</li>
-  <li>It does not collect, store, or share data from any user — there are no other users.</li>
-  <li>It does not sell data, serve ads, or use Google user data for advertising of any kind.</li>
-</ul>
+<p>The application serves exactly one user: its owner. It does not access any other
+person's Google account or data, collects no user data, and provides no public service.</p>
 
-<h2>Data handling</h2>
-<p>OAuth tokens are stored locally on the owner's own machine and are never shared,
-transferred, or used outside of uploading videos to the owner's own channel.
-No Google user data leaves the owner's machine.</p>
+<h2>Google user data</h2>
+<p>The application requests one Google OAuth scope only:
+<code>https://www.googleapis.com/auth/youtube.upload</code>. OAuth tokens are stored
+locally on the owner's own machine and are used exclusively to upload videos to the
+owner's own channel. No Google user data is shared with, sold to, or accessible by any
+third party. Full details are in our
+<a href="./privacy.html">Privacy Policy</a>.</p>
+
+<h2>Contact</h2>
+<p>Brett Balquist — <a href="mailto:brett.balquist@gmail.com">brett.balquist@gmail.com</a></p>
 
 <div class="links">
   <p><a href="./privacy.html">Privacy Policy</a> · <a href="./terms.html">Terms of Service</a></p>
